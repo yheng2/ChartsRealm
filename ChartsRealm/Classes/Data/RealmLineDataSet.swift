@@ -29,9 +29,7 @@ open class RealmLineDataSet: RealmLineRadarDataSet, ILineChartDataSet
     ///
     /// **default**: Linear
     open var mode: LineChartDataSet.Mode = LineChartDataSet.Mode.linear
-    
-    open var isReverse: Bool = false
-    
+        
     fileprivate var _cubicIntensity = CGFloat(0.2)
     
     /// Intensity for cubic lines (min = 0.05, max = 1)
@@ -189,7 +187,6 @@ open class RealmLineDataSet: RealmLineRadarDataSet, ILineChartDataSet
         copy.drawCirclesEnabled = drawCirclesEnabled
         copy.drawCircleHoleEnabled = drawCircleHoleEnabled
         copy.mode = mode
-        copy.isReverse = isReverse
         return copy
     }
     
