@@ -189,6 +189,7 @@ open class RealmLineDataSet: RealmLineRadarDataSet, ILineChartDataSet
         copy.drawCirclesEnabled = drawCirclesEnabled
         copy.drawCircleHoleEnabled = drawCircleHoleEnabled
         copy.mode = mode
+        copy.isReverse = isReverse
         return copy
     }
     
